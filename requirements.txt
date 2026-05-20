@@ -1,0 +1,24 @@
+# Core ML — install PyTorch BEFORE this file if you want MPS (Apple Silicon) support.
+# On Apple Silicon run:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# (the standard pip wheel already includes MPS support on macOS)
+torch>=2.1.0
+torchvision>=0.16.0
+
+# PanEcho model dependencies
+timm==0.9.10
+safetensors
+huggingface_hub
+
+# Video / image processing
+opencv-python
+Pillow>=9.0
+imageio
+
+# Data
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.1
+
+# Utilities
+tqdm
+matplotlib>=3.6
