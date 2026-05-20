@@ -1,0 +1,18 @@
+# Dataset — too large for git
+data/*
+!data/.gitkeep
+
+# Model cache
+.cache/
+
+# Python environments
+.venv/
+__pycache__/
+*.pyc
+
+# Output files
+*.csv
+*.txt
+
+# macOS
+.DS_Store
