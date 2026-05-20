@@ -19,7 +19,8 @@ fi
 if command -v conda &>/dev/null; then
     echo ""
     echo "Creating conda environment 'panecho' from environment_mac.yml ..."
-    conda env create -f environment_mac.yml --force
+    conda env remove -n panecho --yes 2>/dev/null || true
+    conda env create -f environment_mac.yml
     echo ""
     echo "Done. Activate with:  conda activate panecho"
     echo "Then run:             python run_panecho.py --help"
